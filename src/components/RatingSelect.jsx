@@ -1,3 +1,4 @@
+import React from 'react';
 function RatingSelect({ select, selected }) {
   // NOTE: We don't need local state here as it's a duplicate of parent state
   // also no real need for useEffect or context

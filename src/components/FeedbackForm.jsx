@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useContext, useEffect } from 'react'
 import RatingSelect from './RatingSelect'
 import Card from './shared/Card'
@@ -28,7 +29,7 @@ function FeedbackForm() {
     if (value === '') {
       setBtnDisabled(true)
       setMessage(null)
-      
+
   // prettier-ignore
     } else if (value.trim().length < 10) { // 👈 check for less than 10
       setMessage('Text must be at least 10 characters')
